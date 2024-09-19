@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" spacing="20.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ViewBooksController">
+    <children>
+        <Label text="Issued Books Table" textFill="WHITE" underline="true">
+            <VBox.margin>
+                <Insets top="15.0" />
+            </VBox.margin>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblBooks" prefHeight="238.0" prefWidth="360.0">
+            <columns>
+                <TableColumn fx:id="colBookID" prefWidth="75.0" text="Book ID" />
+                <TableColumn fx:id="colUserID" prefWidth="78.39996337890625" text="User ID" />
+                <TableColumn fx:id="colIssueDate" prefWidth="205.5999755859375" text="Issue Date" />
+            </columns>
+            <VBox.margin>
+                <Insets left="20.0" right="20.0" />
+            </VBox.margin>
+        </TableView>
+    </children>
+</VBox>

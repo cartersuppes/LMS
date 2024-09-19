@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.NewUserController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="602.0" style="-fx-background-color: orange;" text="New User Registration" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Label style="-fx-text-fill: white;" text="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserName" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="300.0" style="-fx-background-color: white;" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Label style="-fx-text-fill: white;" text="Email">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserEmail" prefWidth="300.0" style="-fx-background-color: white;" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="114.0" prefWidth="430.0" spacing="15.0">
+         <children>
+            <Label style="-fx-text-fill: white;" text="Address">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtUserAddress" prefHeight="110.0" prefWidth="300.0" style="-fx-background-color: white;" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Label style="-fx-text-fill: white;" text="User Type">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rdoStudent" mnemonicParsing="false" style="-fx-text-fill: white;" text="Student" />
+            <RadioButton fx:id="rdoFaculty" mnemonicParsing="false" style="-fx-text-fill: white;" text="Faculty" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="450.0" spacing="15.0">
+         <children>
+            <Label style="-fx-text-fill: white;" text="Date of Birth">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="btnBirthday" style="-fx-background-color: white;" />
+         </children>
+      </HBox>
+      <Button fx:id="btnRegisterUser" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRegisterUserButton" prefWidth="100.0" style="-fx-text-fill: white; -fx-background-color: lightblue;" text="Register" textAlignment="CENTER" textFill="WHITE">
+
+      <font>
+            <Font size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

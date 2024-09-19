@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="450.0" spacing="10.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ViewUserController">
+    <children>
+        <Label alignment="CENTER" prefHeight="35.0" prefWidth="422.0" style="-fx-background-color: orange;" text="User View">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+        <Label text="Select User" textFill="WHITE" underline="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="cmbUsers" onAction="#loadListInfo" prefWidth="150.0" />
+        <Label fx:id="lblName" text="Name" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblEmail" text="Email" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblAddress" text="Address" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblBirthday" text="Birthday" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblUserType" text="User Type" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblBalance" text="Balance" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label text="Currently Checked Out Books" textFill="WHITE" underline="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <ListView fx:id="lstBooks" prefHeight="124.0" prefWidth="290.0">
+            <VBox.margin>
+                <Insets left="80.0" right="80.0" />
+            </VBox.margin>
+        </ListView>
+        <Button fx:id="btnCollectFine" mnemonicParsing="false" onAction="#handleCollectFine" prefHeight="44.0" prefWidth="103.0" text="Collect Fine">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </children>
+</VBox>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" spacing="5.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ReturnBookController">
+   <children>
+      <Label alignment="CENTER" prefHeight="35.0" prefWidth="583.0" style="-fx-background-color: orange;" text="Return Book" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label text="Quick Book Search" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookSearch" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="197.0" />
+      <Label text="Click to select book" textFill="WHITE" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstBookReturn" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="311.0">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </ListView>
+      <HBox alignment="CENTER" prefHeight="62.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label text="Book ID" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBookID" prefHeight="26.0" prefWidth="83.0" />
+         </children>
+      </HBox>
+      <Button fx:id="btnReturnBook" mnemonicParsing="false" style="-fx-background-color: lightblue;" text="Return Book" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblMessage" textFill="WHITE">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

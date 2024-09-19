@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainMenuController">
+   <children>
+      <Label alignment="CENTER" prefHeight="41.0" prefWidth="588.0" style="-fx-background-color: orange;" text="Library Management System Main Menu">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="90.0" spacing="150.0">
+         <children>
+            <Button fx:id="btnAddUser" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleAddUserButton" prefWidth="175.0" style="-fx-background-color: lightblue; -fx-text-fill: white;" text="Add New User" textAlignment="CENTER">               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAddBook" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleAddBookButton" prefWidth="175.0" style="-fx-background-color: lightblue; -fx-text-fill: white;" text="Add New Book" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="28.0" minHeight="-Infinity" prefHeight="90.0" spacing="150.0">
+         <children>
+            <Button fx:id="btnIssueBook" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleIssueBookButton" prefWidth="175.0" style="-fx-background-color: lightblue; -fx-text-fill: white;" text="Issue Book" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+
+            <Button fx:id="btnReturnBook" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleReturnBookButton" prefWidth="175.0" style="-fx-background-color: lightblue; -fx-text-fill: white;" text="Return Book" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="128.0" minHeight="-Infinity" prefHeight="90.0" spacing="150.0">
+         <children>
+            <Button fx:id="btnViewUsers" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleViewUserButton" prefWidth="175.0" style="-fx-background-color: lightblue; -fx-text-fill: white;" text="View User Details" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnViewBooks" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleViewBooksButton" prefWidth="175.0" style="-fx-background-color: lightblue; -fx-text-fill: white;" text="View Issued Books" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
