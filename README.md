@@ -1,2 +1,6 @@
 # LMS
 Library Management System JavaFX Project
+
+This project is a library management system with multiple graphical user interfaces (GUIs) designed to manage different library functions efficiently. It includes a user creation page, where users can input personal details such as name, birthdate, and email to create a new account. Another page is dedicated to adding new books, allowing the user to input relevant information like the title, author, publisher, and publication date. The system also features separate pages for checking out books, returning them, and viewing user details. This includes seeing what books a person has checked out and managing their records. Lastly, a book view page displays important book information and whether the book is currently checked out.
+
+The system connects to a remote SQL database to store and retrieve data, ensuring consistency and persistence across sessions. Each aspect of the project has been designed with core object-oriented programming (OOP) principles, allowing for modularity, code reuse, and maintainability. By integrating various elements of OOP and database management, this project demonstrates a comprehensive understanding of both software design and database interaction in a real-world library management context.
